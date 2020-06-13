@@ -1,0 +1,19 @@
+Premium Plan for Azure Service Bus Namespace
+---------------------------------------------
+
+With several other pricing plans available for Azure service bus namespace the Premium Plan addresses following common concerns for mission critical application:
+1. Performance
+2. Scaling
+3. Availability
+
+The Premium Plan allocates dedicated resources to handle the load as compared to the Standard or any other plan.
+Resource isolation at the CPU and Memory level is provided in the Premium Plan. This allows the worlods to run in isolation and not on the shared pool of resources.
+
+This resource Isolation container is known as "Messaging Unit" which can be defined at the time of creation and can be managed at a later point as well, depending upon the need. Single workload can be processed on multiple Messaging units.
+
+It's the messaging unit which helps service bus process the worload in a faster and predictable manner.
+As said earlier the Messaging units can be changed as per the need, means Dynamically, CPU monitoring from Resource Usage Metrics for the namespace is really important here.
+
+It is totally up to the business or technical team to decide what is the % of CPU usage they thing can be considered as Peak and once this is reached the messaging units can be increased. This will increase the cost, which is fair.
+
+Similar will be the logic when we want to decrease the no of messaging units, which is, then CPU usage is really low then decreasing the Messaging unit will be the right idea in order to save the cost.
